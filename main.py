@@ -85,5 +85,5 @@ class CalcularFaturamento:
             print(f"Ocorreu um erro ao enviar o e-mail: {e}")
 
 # Criando a instância da classe e enviando o e-mail
-calcular_faturamento = CalcularFaturamento()  # Instancia a classe 'CalcularFaturamento', carregando os dados de vendas # Envia o relatório de vendas por e-mail para o destinatário fornecido
-print([m for m in dir(CalcularFaturamento) if not m.startswith('__')])
+calcular_faturamento = CalcularFaturamento()  # Instancia a classe 'CalcularFaturamento', carregando os dados de vendas
+calcular_faturamento.enviar_email('exemplo@gmail.com')  # Envia o relatório de vendas por e-mail para o destinatário fornecido
